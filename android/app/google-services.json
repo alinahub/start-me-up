@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "761549357321",
+    "firebase_url": "https://start-me-up-app.firebaseio.com",
+    "project_id": "start-me-up-app",
+    "storage_bucket": "start-me-up-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:761549357321:android:68d7d603d6a96b69c753d8",
+        "android_client_info": {
+          "package_name": "com.startmeupapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "761549357321-kf97pouts44t00dk801ck0tngbmvdhm8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.startmeupapp",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "761549357321-r12i38ic0vsvmc0efkrgbl75bh63kea5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRAxf6iBv_KESSNwQCuuslEVH-c_RJoDo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "761549357321-r12i38ic0vsvmc0efkrgbl75bh63kea5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
