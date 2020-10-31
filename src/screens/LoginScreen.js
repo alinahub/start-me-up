@@ -10,7 +10,7 @@ export default function LoginScreen({ navigation }) {
     const { login } = useContext(AuthContext);
     return (
         <View style={styles.container}>
-            <Text style={styles.text}>Welcome to StartMeUp</Text>
+            <Text style={styles.text}>Startmeup</Text>
             <FormInput
                 value={email}
                 placeholderText='Email'
@@ -30,7 +30,7 @@ export default function LoginScreen({ navigation }) {
                 style={styles.navButton}
                 onPress={() => navigation.navigate('SignUp')}
             >
-                <Text style={styles.navButtonText}>New user? Register here</Text>
+                <Text style={styles.navButtonText}>Don't have an account?<Text style={styles.navButtonTextBold}> Signup here</Text></Text>
             </TouchableOpacity>
         </View>
     );
@@ -44,14 +44,20 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     text: {
-        fontSize: 24,
-        marginBottom: 10
+        fontSize: 32,
+        fontWeight: "bold",
+        marginBottom: 50
     },
     navButton: {
         marginTop: 15
     },
     navButtonText: {
-        fontSize: 20,
-        color: '#6646ee'
+        fontSize: 16,
+        color: '#000000',
+        marginTop: 50
+    },
+    navButtonTextBold: {
+        fontWeight: "bold",
+        color: '#367f99',
     }
 });
