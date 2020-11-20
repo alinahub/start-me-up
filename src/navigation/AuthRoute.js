@@ -3,8 +3,7 @@ import auth from '@react-native-firebase/auth';
 import {Alert} from 'react-native';
 
 /**
- * This provider is created
- * to access user in whole app
+ * This provider is created to access user in whole app
  */
 
 export const AuthContext = createContext({});
