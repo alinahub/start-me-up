@@ -9,6 +9,7 @@ import Loading from './src/components/Loading';
 import HomeStack from './src/navigation/HomeStack';
 import LoginScreen from './src/screens/LoginScreen';
 import SignUpScreen from './src/screens/SignUpScreen';
+import ResetPasswordScreen from './src/screens/ResetPasswordScreen';
 
 const Stack = createStackNavigator();
 
@@ -45,6 +46,7 @@ export function Routes() {
                         options={{ header: () => null }}
                     />
                     <Stack.Screen name='SignUp' component={SignUpScreen} />
+                    <Stack.Screen name='ResetPassword' component={ResetPasswordScreen} />
                 </Stack.Navigator>}
         </NavigationContainer>
     );

@@ -49,6 +49,18 @@ export const AuthRoute = ({ children }) => {
                         }
                     }
                 },
+                resetPassword: async (email) => {
+                    try {
+
+                        await auth().sendPasswordResetEmail(email).then(function() {
+                            // Email sent.
+                        }).catch(function(error) {
+                            // An error happened.
+                        });
+                    } catch (e) {
+                        console.log(e);
+                    }
+                },
                 logout: async () => {
                     try {
                         await auth().signOut();

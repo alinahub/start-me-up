@@ -7,10 +7,18 @@ import { AuthContext } from '../navigation/AuthRoute';
 export default function SignUpScreen() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [name, setName] = useState('');
     const { register } = useContext(AuthContext);
+
     return (
         <View style={styles.container}>
-            <Text style={styles.text}>Create an account</Text>
+            <Text style={styles.text}>Create new account</Text>
+            <FormInput
+                value={name}
+                placeholderText='Full Name'
+                onChangeText={name => setName(name)}
+                autoCorrect={false}
+            />
             <FormInput
                 value={email}
                 placeholderText='Email'
